@@ -31,13 +31,13 @@ nav a {
 }
 
 .slideshow {
- width: 100%;
+ width: 30%;
  height: 200px;
  margin-bottom: 20px;
 }
 
 .slideshow img {
- width: 100%;
+ width: 30%;
  height: 20%;
  object-fit: cover;
 }
