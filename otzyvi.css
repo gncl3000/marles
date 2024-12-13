@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+header {
+    background-color: #ff9900;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    float: left;
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.reviews-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.reviews-section h1 {
+    color: #ff9900;
+}
+
+.reviews-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.review-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.review-card h3 {
+    margin-top: 10px;
+    color: #ff9900;
+}
+
+.add-review {
+    margin-top: 30px;
+}
+
+.add-review h2 {
+    color: #ff9900;
+}
+
+.add-review form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add-review input, .add-review textarea {
+    width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.add-review button {
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-review button:hover {
+    background-color: #e68a00;
+}
+
+footer {
+    background-color: #ff9900;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
