@@ -1,101 +1,133 @@
+/* Общие стили для всего документа */
 body {
- font-family: Arial, sans-serif;
- background-color: #f7f7f7;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4; /* Светлый фон для контраста */
 }
 
+/* Стили для заголовка */
 header {
- background-color: #ff9900;
- padding: 20px;
- text-align: center;
+    width: 100%;
+    background-color: #fff; /* Белый фон для заголовка */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для заголовка */
 }
 
-.logo {
- float: left;
- margin-right: 20px;
-}
-
+/* Стили для навигации */
 nav ul {
- list-style: none;
- margin: 0;
- padding: 0;
+    list-style-type: none;
+    padding: 0;
 }
 
-nav li {
- display: inline-block;
- margin-right: 20px;
+nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
 nav a {
- color: #fff;
- text-decoration: none;
+    text-decoration: none;
+    color: #333; /* Цвет ссылок */
+    font-weight: bold;
 }
 
+nav a:hover {
+    color: #007BFF; /* Цвет ссылок при наведении */
+}
+
+/* Стили для слайд-шоу */
 .slideshow {
- width: 100%;
- height: 300px;
- margin-bottom: 20px;
+    margin: 20px 0;
 }
 
-.slideshow img {
- width: 500%;
- height: 20%;
- object-fit: cover;
-}
-
+/* Стили для контента с колонками */
 .content {
- display: flex;
- flex-wrap: wrap;
- justify-content: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px; /* Максимальная ширина контента */
+    margin: 20px 0; /* Отступы сверху и снизу */
 }
 
+/* Стили для блоков с продуктами */
 .block {
- width: 30%;
- margin: 20px;
- background-color: #fff;
- padding: 20px;
- border: 1px solid #ddd;
- box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* Белый фон для блоков */
+    border: 1px solid #ccc; /* Светло-серая граница */
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    width: 30%; /* Ширина каждой колонки */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для блоков */
+    text-align: center;
+    transition: transform 0.2s; /* Плавный переход при наведении */
 }
 
-.block h2 {
- margin-top: 0;
+.block:hover {
+    transform: scale(1.05); /* Увеличение блока при наведении */
 }
 
-.reviews {
- margin-bottom: 20px;
+.block img {
+    width: 100%; /* Изображение занимает всю ширину блока */
+    height: auto;
+    border-radius: 5px; /* Скругление углов изображений */
 }
 
-.reviews h2 {
- margin-top: 0;
-}
-
+/* Стили для формы заказа */
 .order {
- margin-bottom: 20px;
+    margin: 20px 0;
+    background-color: #fff; /* Белый фон для формы */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для формы */
+    width: 300px; /* Ширина формы */
 }
 
-.order h2 {
- margin-top: 0;
+.order input {
+    width: 100%; /* Поля ввода занимают всю ширину формы */
+    padding: 10px;
+    margin: 5px 0; /* Отступы между полями */
+    border: 1px solid #ccc; /* Светло-серая граница */
+    border-radius: 5px; /* Скругление углов */
 }
 
+.order button {
+    background-color: #007BFF; /* Синий цвет кнопки */
+    color: white; /* Цвет текста на кнопке */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Указатель при наведении */
+    width: 100%; /* Кнопка занимает всю ширину формы */
+}
+
+.order button:hover {
+    background-color: #0056b3; /* Темнее при наведении */
+}
+
+/* Стили для подвала */
 footer {
- background-color: #ff9900;
- padding: 20px;
- text-align: center;
- color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #fff; /* Белый фон для подвала */
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Тень для подвала */
 }
 
 footer ul {
- list-style: none;
- margin: 0;
- padding: 0;
+    list-style-type: none;
+    padding: 0;
 }
 
-footer li {
- display: inline-block;
- margin-right: 20px;
+footer ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
 footer a {
- color: #fff;
- text-decoration: none;
+    text-decoration: none;
+    color: #333; /* Цвет ссылок в подвале */
 }
