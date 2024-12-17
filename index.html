@@ -5,11 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Компания по выпечке хлеба и булочек</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            width: 100%;
+            background-color: #f8f8f8;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .slideshow {
+            margin: 20px 0;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 1200px; /* Максимальная ширина контента */
+        }
+
+        .block {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 15px;
+            width: 30%; /* Ширина каждой колонки */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .block img {
+            width: 100%; /* Изображение занимает всю ширину блока */
+            height: auto;
+        }
+
+        .order {
+            margin: 20px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #f8f8f8;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="logo.png" alt="логотип">
+            <img src="logo.png" alt="логотип" width="100" height="100">
         </div>
         <nav>
             <ul>
@@ -22,20 +87,10 @@
     </header>
     
     <div class="slideshow">
-        <img src="image1.jpg" alt="Изображение 1" height="150">
-        <img src="image2.png" alt="Изображение 2" height="150">
-        <img src="image3.jpg" alt="Изображение 3" height="150">
-        <img src="image4.jpg" alt="Изображение 4" height="150">
-        <img src="image5.jpg" alt="Изображение 5" height="150">
-        <img src="image6.jpg" alt="Изображение 6" height="150">
+        <img src="image1.jpg" alt="Изображение 1" width="300" height="150">
     </div>
     
     <div class="content">
-        <div class="block">
-            <h2>Хлеб</h2>
-            <p>Наш свежий хлеб — это настоящая находка для любителей ароматной и натуральной выпечки! Приготовленный по традиционным рецептам, он обладает мягкой и воздушной текстурой с хрустящей корочкой.</p>
-            <img src="bread.jpg" alt="Изображение хлеба">
-        </div>
         <div class="block">
             <h2>Пироги</h2>
             <p>Погрузитесь в мир сладкого наслаждения с нашим домашним пирогом! Каждый пирог — это идеальное сочетание нежного теста и сочной начинки, приготовленной из свежих, натуральных ингредиентов.</p>
@@ -45,6 +100,11 @@
             <h2>Булочки</h2>
             <p>Откройте для себя мир восхитительных булочек, которые подарят вам незабываемые моменты наслаждения! Наши булочки готовятся из отборной муки и натуральных ингредиентов, что делает их мягкими, воздушными и аппетитными.</p>
             <img src="buns.jpeg" alt="Изображение булочек">
+        </div>
+        <div class="block">
+            <h2>Хлеб</h2>
+            <p>Наш свежий хлеб — это настоящая находка для любителей ароматной и натуральной выпечки! Приготовленный по традиционным рецептам, он обладает мягкой и воздушной текстурой с хрустящей корочкой.</p>
+            <img src="bread.jpg" alt="Изображение хлеба">
         </div>
     </div>
     
